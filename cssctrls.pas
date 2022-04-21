@@ -433,7 +433,8 @@ initialization
 begin
 	FAFont := TFreeTypeFont.Create;
   // TODO: this is not best way!
-  if FileExists(Application.Location + 'fontawesome-webfont.ttf') then 	FAFont.Name :=  Application.Location + 'fontawesome-webfont.ttf';
+  if FileExists(Application.Location + 'data/fonts/fontawesome-webfont.ttf') then
+    FAFont.Name :=  Application.Location + 'data/fonts/fontawesome-webfont.ttf';
 end;
 
 finalization
